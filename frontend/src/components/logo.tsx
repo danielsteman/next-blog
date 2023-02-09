@@ -2,13 +2,13 @@ import * as React from 'react';
 import {
   chakra,
   keyframes,
-  ImageProps,
   usePrefersReducedMotion,
   Box,
 } from '@chakra-ui/react';
 import logo from '../assets/memoji.png';
+import NextImage from 'next/image'
 
-const Logo = (props: ImageProps) => {
+const Logo = () => {
   const [rotateClockwise, setRotateClockwise] = React.useState(false);
   const [position, setPosition] = React.useState(0);
 
@@ -36,15 +36,13 @@ const Logo = (props: ImageProps) => {
         }
         setRotateClockwise(!rotateClockwise);
       }}
+      animation={animation}
+      ref={ref}
+      ml={3}
+      mt={1}
+      w="10vmin"
     >
-      <chakra.img
-        animation={animation}
-        src={logo}
-        ref={ref}
-        ml={3}
-        mt={1}
-        {...props}
-      />
+      <NextImage src={logo} alt="logo" />
     </Box>
   );
 };

@@ -41,10 +41,7 @@ const Base: React.FC<Props> = ({ children }) => {
                 <SideMenu />
               </Box>
             ) : null}
-            <Logo
-              h="10vmin"
-              pointerEvents="none"
-            />
+            <Logo />
           </Flex>
         </GridItem>
         {isMobile ? (
