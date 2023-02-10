@@ -1,13 +1,12 @@
 import React from "react";
-import { Link, Text } from "@chakra-ui/react";
-import PageTitle from "../components/PageTitle";
-import Base from "./Base";
+import { Box, Link, Text } from "@chakra-ui/react";
+import PageTitle from "../components/pagetitle";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const About = () => {
   const title = "Hi! I'm Daniel 👋";
   return (
-    <Base>
+    <Box>
       <PageTitle>{title}</PageTitle>
       <Text>
         Enthousiastic about most tech related things and always learning. At
@@ -39,7 +38,7 @@ const About = () => {
         </Link>
         ).
       </Text>
-    </Base>
+    </Box>
   );
 };
 
