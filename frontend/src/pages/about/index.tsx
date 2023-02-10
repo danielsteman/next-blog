@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Link, Text } from "@chakra-ui/react";
-import PageTitle from "../components/pagetitle";
+import PageTitle from "../../components/pagetitle";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 const About = () => {
