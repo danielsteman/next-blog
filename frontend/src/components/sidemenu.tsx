@@ -6,7 +6,7 @@ import {
   MdInfo, MdAutoGraph, MdConstruction, MdContactPage, MdEdit,
 } from 'react-icons/md';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import SideMenuButton from './SideMenuButton';
+import SideMenuButton from './sidemenubutton';
 
 const SideMenu = () => {
   const [open, setOpen] = useState(false);
