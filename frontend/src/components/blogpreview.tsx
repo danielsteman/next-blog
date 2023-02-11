@@ -3,10 +3,10 @@ import {
   Box, Button, Text, useColorModeValue, VStack,
 } from '@chakra-ui/react';
 import { TiArrowRightThick } from 'react-icons/ti';
-import { Link } from 'react-router-dom';
-import { IBlog } from '../shared/repo.interface';
-import PageTitle from './PageTitle';
-import BlogTags from './BlogTags';
+import Link from 'next/link'
+import { IBlog } from '../shared/blog.interface';
+import PageTitle from './pagetitle';
+import BlogTags from './blogtags';
 
 const BlogPreview: React.FC<IBlog> = ({
   id, title, date, text, tags,
@@ -21,7 +21,7 @@ const BlogPreview: React.FC<IBlog> = ({
       <Text mb={4}>{text}</Text>
       <VStack alignItems="left">
         <BlogTags tags={tags} />
-        <Link to={`/blog/${id}`}>
+        <Link href={`/blog/${id}`}>
           <Button mt={4} py={1}>
             <Text mr={1}>Read more</Text>
             <TiArrowRightThick size={24} />
