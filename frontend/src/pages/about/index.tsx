@@ -10,7 +10,7 @@ const About = () => {
       <PageTitle>{title}</PageTitle>
       <Text>
         Enthousiastic about most tech related things and always learning. At
-        work I'm focusing on building scalable ML-powered backend applications,
+        work I&apos;m focusing on building scalable ML-powered backend applications,
         deploying & maintaining distributed systems and setting up
         organization-wide{" "}
         <Link
@@ -20,7 +20,7 @@ const About = () => {
           InnerSource
           <ExternalLinkIcon mx="1px" />.
         </Link>{" "}
-        In my own time I'm dabbling with Linux distros (currently exploring the
+        In my own time I&apos;m dabbling with Linux distros (currently exploring the
         rabbit hole of{" "}
         <Link href="https://github.com/danielsteman/nixos-config">
           NixOS
